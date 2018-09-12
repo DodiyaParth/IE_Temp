@@ -1,0 +1,37 @@
+package questions;
+
+public class Functions
+{
+	String func1(String k)
+	{
+		long a = 0;
+		try
+		{
+		int m=Integer.parseInt(k);
+		a = (long) Math.pow(m/10, m%10);
+		}
+		catch(Exception e)
+		{
+			//Exception
+		}
+		return Long.toString(a);
+	}
+	
+	String func3(String k)
+	{
+		int sum=0;
+		try
+		{
+			for(char x: k.toCharArray())
+			{
+				sum+=Math.pow((int)x-'0',2);
+			}
+		}
+		catch(Exception e)
+		{
+			//exception
+		}
+		return String.valueOf(sum);
+	}
+	
+}
